@@ -6,8 +6,8 @@ $Descr User 5906 5921
 encoding utf-8
 Sheet 5 6
 Title ""
-Date ""
-Rev ""
+Date "2019-01-06"
+Rev "0.1 alpha"
 Comp ""
 Comment1 ""
 Comment2 ""

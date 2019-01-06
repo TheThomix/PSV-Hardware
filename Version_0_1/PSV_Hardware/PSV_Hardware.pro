@@ -1,4 +1,4 @@
-update=Sa 05 Jan 2019 00:09:58 CET
+update=So 06 Jan 2019 13:55:07 CET
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=/home/thomas/Documents/MainView
+PlotDirectoryName=/home/thomas/Documents/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
