@@ -172,18 +172,16 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 5C7D47EE
-P 3750 2750
+P 3750 3000
 AR Path="/5C42EFAE/5C7D47EE" Ref="R?"  Part="1" 
 AR Path="/5C42EFAE/5C7D4553/5C7D47EE" Ref="R409"  Part="1" 
-F 0 "R409" H 3820 2796 50  0000 L CNN
-F 1 "120 5W 5%" H 3820 2705 50  0000 L CNN
-F 2 "" V 3680 2750 50  0001 C CNN
-F 3 "~" H 3750 2750 50  0001 C CNN
-	1    3750 2750
+F 0 "R409" H 3820 3046 50  0000 L CNN
+F 1 "120 5W 5%" H 3820 2955 50  0000 L CNN
+F 2 "" V 3680 3000 50  0001 C CNN
+F 3 "~" H 3750 3000 50  0001 C CNN
+	1    3750 3000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3750 2900 3750 3250
 Wire Wire Line
 	3450 3450 3400 3450
 Wire Wire Line
@@ -289,9 +287,6 @@ Wire Wire Line
 	4300 2500 4300 2800
 Text Label 4300 2400 2    50   ~ 0
 RAIL
-Connection ~ 3750 2400
-Wire Wire Line
-	3750 2400 3750 2600
 Wire Wire Line
 	3750 2400 4350 2400
 $Comp
@@ -386,8 +381,6 @@ Wire Wire Line
 	3300 5600 3300 5700
 Text Label 2900 4850 0    50   ~ 0
 RAIL
-Text Label 2900 5100 0    50   ~ 0
-RAIL_RX
 Wire Wire Line
 	2900 4850 3200 4850
 Wire Wire Line
@@ -396,7 +389,7 @@ Wire Wire Line
 	3600 4850 3600 5100
 Text HLabel 1150 3100 0    50   Input ~ 0
 RAIL_TX
-Text HLabel 2900 4850 0    50   Output ~ 0
+Text HLabel 2600 5100 0    50   Output ~ 0
 RAIL_RX
 Text HLabel 3300 4050 0    50   Input ~ 0
 GND
@@ -501,4 +494,25 @@ Use PinHeader to exchange the pMOS\nif needed. That will reduce stress for the P
 NoConn ~ 4500 1850
 NoConn ~ 4200 2050
 NoConn ~ 4500 2250
+$Comp
+L Device:D D?
+U 1 1 5C9D40F1
+P 3750 2650
+F 0 "D?" V 3796 2571 50  0000 R CNN
+F 1 "1N4148" V 3705 2571 50  0000 R CNN
+F 2 "" H 3750 2650 50  0001 C CNN
+F 3 "~" H 3750 2650 50  0001 C CNN
+	1    3750 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3750 3150 3750 3250
+Wire Wire Line
+	3750 2850 3750 2800
+Wire Wire Line
+	3750 2500 3750 2400
+Connection ~ 3750 2400
+Wire Wire Line
+	2900 5100 2600 5100
+Connection ~ 2900 5100
 $EndSCHEMATC
