@@ -4,9 +4,9 @@ EELAYER 26 0
 EELAYER END
 $Descr User 7874 7874
 encoding utf-8
-Sheet 4 6
+Sheet 4 7
 Title "RailConnection"
-Date "2019-01-06"
+Date "2019-01-08"
 Rev "0.1 alpha"
 Comp ""
 Comment1 "Connection via PMOS to the rail"

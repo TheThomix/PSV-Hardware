@@ -4,9 +4,9 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 2 7
 Title "USB Connection"
-Date "2019-01-06"
+Date "2019-01-08"
 Rev "0.1 alpha"
 Comp ""
 Comment1 "USB MCU with Lapcounter"

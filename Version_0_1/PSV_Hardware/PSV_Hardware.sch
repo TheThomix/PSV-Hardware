@@ -4,9 +4,9 @@ EELAYER 26 0
 EELAYER END
 $Descr User 9843 5921
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title "PSV-Baseboard"
-Date "2019-01-06"
+Date "2019-01-08"
 Rev "0.1 alpha"
 Comp ""
 Comment1 "Baseboard of the PSV project"
@@ -61,17 +61,6 @@ F 3 "" H 2950 1050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:VCC #PWR0107
-U 1 1 5C42DEC9
-P 6100 1050
-F 0 "#PWR0107" H 6100 900 50  0001 C CNN
-F 1 "VCC" V 6117 1178 50  0000 L CNN
-F 2 "" H 6100 1050 50  0001 C CNN
-F 3 "" H 6100 1050 50  0001 C CNN
-	1    6100 1050
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR0104
 U 1 1 5C42DF2F
 P 2950 1150
@@ -95,8 +84,6 @@ F 3 "" H 6100 1150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5200 1150 6100 1150
-Wire Wire Line
-	5200 1050 6100 1050
 Wire Wire Line
 	2350 1150 2950 1150
 Wire Wire Line
@@ -214,6 +201,7 @@ F5 "GND" O R 2200 3000 50
 F6 "V_MCU" O R 2200 2500 50 
 F7 "SENSE_I" O R 2200 2800 50 
 F8 "SENSE_V" O R 2200 2900 50 
+F9 "V_IIC" O R 2200 2600 50 
 $EndSheet
 Wire Wire Line
 	2200 2700 3350 2700
@@ -451,4 +439,14 @@ Wire Wire Line
 	2650 2800 3350 2800
 Wire Wire Line
 	3100 2900 3350 2900
+Wire Wire Line
+	2200 2600 2700 2600
+Wire Wire Line
+	2700 2600 2700 2200
+Wire Wire Line
+	2700 2200 6450 2200
+Wire Wire Line
+	6450 2200 6450 1050
+Wire Wire Line
+	6450 1050 5200 1050
 $EndSCHEMATC
