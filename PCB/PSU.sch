@@ -40,7 +40,7 @@ L Device:Fuse F?
 U 1 1 5C37C2B9
 P 2550 3600
 F 0 "F?" V 2353 3600 50  0000 C CNN
-F 1 "8A slow" V 2444 3600 50  0000 C CNN
+F 1 "10A slow" V 2444 3600 50  0000 C CNN
 F 2 "" V 2480 3600 50  0001 C CNN
 F 3 "~" H 2550 3600 50  0001 C CNN
 	1    2550 3600
@@ -392,7 +392,7 @@ Wire Wire Line
 Wire Wire Line
 	5050 5650 5050 5950
 Wire Wire Line
-	5050 5950 5550 5950
+	5050 5950 5350 5950
 Connection ~ 5550 5950
 Wire Wire Line
 	5550 5950 5550 5400
@@ -705,4 +705,31 @@ Wire Notes Line
 	2800 3350 2800 5100
 Wire Notes Line
 	2800 5100 3650 5100
+$Comp
+L Mechanical:Heatsink_Pad HS?
+U 1 1 5CAD4A97
+P 5350 5800
+F 0 "HS?" H 5491 5841 50  0000 L CNN
+F 1 "Heatsink_Pad" H 5491 5750 50  0000 L CNN
+F 2 "" H 5362 5750 50  0001 C CNN
+F 3 "~" H 5362 5750 50  0001 C CNN
+	1    5350 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 5900 5350 5950
+Connection ~ 5350 5950
+Wire Wire Line
+	5350 5950 5550 5950
+$Comp
+L Mechanical:Heatsink HS?
+U 1 1 5CAD7D89
+P 3100 3350
+F 0 "HS?" H 3242 3471 50  0000 L CNN
+F 1 "Heatsink" H 3242 3380 50  0000 L CNN
+F 2 "" H 3112 3350 50  0001 C CNN
+F 3 "" H 3112 3350 50  0001 C CNN
+	1    3100 3350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
